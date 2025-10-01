@@ -1,6 +1,8 @@
 Appointment Booking System -
 This is a full-stack appointment booking application built with Spring Boot (Java) for the backend and React for the frontend. It allows businesses to manage their services and availability, and customers to book appointments easily.
+
 Key Features -
+
 For Businesses:
 Create & manage businesses: Add business details like name, description, and location.
 Manage services: Add services offered, set duration and price.
