@@ -17,6 +17,7 @@ Book appointments: Pick a date/time based on the business’s availability slots
 Manage appointments: View or cancel upcoming bookings.
 
 How it Works
+
 Business owner creates a business, adds services, and sets availability slots.
 Customer selects a business, chooses a service, picks a valid slot, and books an appointment.
 The system validates the selected time and ensures no conflicts with existing appointments.
