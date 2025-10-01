@@ -104,3 +104,22 @@
 .register-link:hover {
   text-decoration: underline;
 }
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .register-container {
+    padding: 15px;
+  }
+
+  .register-card {
+    padding: 30px 20px;
+  }
+
+  .register-title {
+    font-size: 24px;
+  }
+
+  .register-subtitle {
+    font-size: 18px;
+  }
+}

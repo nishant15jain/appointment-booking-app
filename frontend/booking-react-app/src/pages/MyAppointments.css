@@ -150,3 +150,63 @@
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .appointments-container {
+    padding: 20px 15px;
+  }
+
+  .appointment-card {
+    padding: 20px;
+  }
+
+  .appointment-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .status-badge {
+    align-self: flex-start;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+
+  .detail-label,
+  .detail-value {
+    width: 100%;
+  }
+
+  .appointment-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cancel-btn,
+  .delete-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .appointments-container {
+    padding: 15px 10px;
+  }
+
+  .appointments-container h1 {
+    font-size: 24px;
+  }
+
+  .appointment-card {
+    padding: 16px;
+  }
+
+  .appointment-header h3 {
+    font-size: 18px;
+  }
+}

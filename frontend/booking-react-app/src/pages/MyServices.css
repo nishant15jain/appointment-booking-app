@@ -222,3 +222,82 @@
 .delete-btn:hover {
   background-color: #c82333;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .my-services-container {
+    padding: 20px 15px;
+  }
+
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .create-btn {
+    width: 100%;
+  }
+
+  .form-card {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .service-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .service-meta {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .service-actions {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-services-container {
+    padding: 15px 10px;
+  }
+
+  .header-section h1 {
+    font-size: 24px;
+  }
+
+  .form-card,
+  .service-item {
+    padding: 16px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .cancel-btn,
+  .submit-btn {
+    width: 100%;
+  }
+
+  .service-actions {
+    flex-direction: column;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    width: 100%;
+  }
+}

@@ -272,3 +272,36 @@
   text-decoration: underline;
 }
 
+/* Additional Mobile Responsive */
+@media (max-width: 480px) {
+  .set-availability {
+    padding: 15px 10px;
+  }
+
+  .page-header h1 {
+    font-size: 24px;
+  }
+
+  .add-slot-form {
+    padding: 20px;
+  }
+
+  .add-slot-form h2 {
+    font-size: 1.25rem;
+  }
+
+  .form-actions,
+  .slot-card {
+    flex-direction: column;
+  }
+
+  .btn,
+  .btn-delete {
+    width: 100%;
+  }
+
+  .slot-info {
+    margin-bottom: 10px;
+  }
+}
+

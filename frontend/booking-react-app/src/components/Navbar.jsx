@@ -1,9 +1,19 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import './Navbar.css';
 
 const Navbar = () => {
   const { user, logout, isCustomer, isBusiness } = useAuth();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <nav className="navbar">
@@ -12,21 +22,25 @@ const Navbar = () => {
           Appointment Booking
         </Link>
 
-        <div className="navbar-menu">
+        <button className="navbar-menu-toggle" onClick={toggleMenu}>
+          {menuOpen ? '✕' : '☰'}
+        </button>
+
+        <div className={`navbar-menu ${menuOpen ? 'active' : ''}`}>
           {isCustomer && (
             <>
-              <Link to="/customer" className="navbar-link">Browse</Link>
-              <Link to="/customer/appointments" className="navbar-link">My Appointments</Link>
+              <Link to="/customer" className="navbar-link" onClick={closeMenu}>Browse</Link>
+              <Link to="/customer/appointments" className="navbar-link" onClick={closeMenu}>My Appointments</Link>
             </>
           )}
           
           {isBusiness && (
             <>
-              <Link to="/business" className="navbar-link">Dashboard</Link>
-              <Link to="/business/appointments" className="navbar-link">Appointments</Link>
-              <Link to="/business/my-businesses" className="navbar-link">My Businesses</Link>
-              <Link to="/business/my-services" className="navbar-link">My Services</Link>
-              <Link to="/business/availability" className="navbar-link">Availability</Link>
+              <Link to="/business" className="navbar-link" onClick={closeMenu}>Dashboard</Link>
+              <Link to="/business/appointments" className="navbar-link" onClick={closeMenu}>Appointments</Link>
+              <Link to="/business/my-businesses" className="navbar-link" onClick={closeMenu}>My Businesses</Link>
+              <Link to="/business/my-services" className="navbar-link" onClick={closeMenu}>My Services</Link>
+              <Link to="/business/availability" className="navbar-link" onClick={closeMenu}>Availability</Link>
             </>
           )}
 

@@ -112,3 +112,22 @@
 .login-link:hover {
   text-decoration: underline;
 }
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-card {
+    padding: 30px 20px;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .login-subtitle {
+    font-size: 18px;
+  }
+}

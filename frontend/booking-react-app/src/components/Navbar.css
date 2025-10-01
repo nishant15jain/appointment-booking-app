@@ -70,3 +70,75 @@
 .navbar-logout-btn:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+/* Mobile Menu Toggle */
+.navbar-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .navbar-container {
+    height: auto;
+    min-height: 60px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .navbar-logo {
+    font-size: 18px;
+  }
+
+  .navbar-menu-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 15px 0;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-link {
+    padding: 12px 16px;
+    text-align: left;
+    border-radius: 4px;
+  }
+
+  .navbar-user-section {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .navbar-user-info {
+    text-align: center;
+  }
+
+  .navbar-logout-btn {
+    width: 100%;
+  }
+}
