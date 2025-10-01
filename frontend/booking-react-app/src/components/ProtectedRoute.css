@@ -1,0 +1,13 @@
+.access-denied {
+  padding: 40px;
+  text-align: center;
+}
+
+.access-denied h1 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.access-denied p {
+  color: #666;
+}
