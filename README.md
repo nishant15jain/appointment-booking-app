@@ -8,4 +8,4 @@ How it Works
 3. The system validates the selected time and ensures no conflicts with existing appointments.
 4. Both business and customer can manage appointments through their dashboards.
 
-You can access this project from here - appointment-booking-webapp.netlify.app
+You can access this project from here - https://appointment-booking-webapp.netlify.app/
